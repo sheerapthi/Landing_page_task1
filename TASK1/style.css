@@ -1,0 +1,1367 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Smooth scrolling for anchor links */
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #F8F8F8; /* Overall light background */
+    overflow-x: hidden; /* Prevent horizontal scroll due to absolute positioning or margins */
+}
+
+.main-content-wrapper {
+    max-width: 1140px; /* Consistent max-width for main content */
+    margin: 0 auto;
+    padding: 0 20px; /* Add some horizontal padding inside the wrapper for smaller screens */
+}
+
+.section {
+    padding: 100px 0; /* Standard vertical padding for sections */
+}
+
+.highlight {
+    color: #FA7436; /* Orange highlight color */
+}
+
+/* General Button Styles */
+.button {
+    background-color: #FA7436;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color:#fbb391;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    max-width: 600px;
+    margin: 15px auto 50px auto;
+}
+
+/* Header */
+.header-container {
+  position: relative;
+}
+
+.header-logo {
+  position: absolute;
+  right: 100px;
+  bottom: -12px;
+  width: 20px;
+  height: auto;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky; /* Make header sticky */
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Ensure header is above other content */
+}
+
+header .main-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 30px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #FA7436;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 20px; /* Space between login and signup buttons */
+}
+
+.button-login {
+    background: none;
+    border: none;
+    color: #FA7436;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 0; /* Adjust padding for text-only button */
+}
+
+.button-login:hover {
+    text-decoration: underline;
+}
+
+.button-signup {
+    background-color: #FA7436;
+    color: #fff;
+    padding: 10px 25px; /* Consistent padding for signup button */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.button-signup:hover {
+    background-color: #e66a2f;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FEFCFB;
+    padding: 80px 0 180px 0; /* Increased bottom padding to accommodate search panel */
+    position: relative; 
+    overflow: hidden; 
+}
+
+.hero .main-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Ensure content is above any background graphics */
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+    max-width: 450px;
+}
+
+.hero-image {
+    max-width: 450px; 
+    height: auto;
+    position: relative; 
+    z-index: 2; 
+}
+
+/* Discover Now button specific style */
+.discover-now-btn {
+    background-color: #fff; /* Orange background */
+    color: #FA7436;
+    padding: 15px 30px;
+    margin-bottom: 60px;
+    border: 2px solid #FA7436;
+}
+
+/* Search Panel */
+.search-panel {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    display: flex;    align-items: center;
+    padding: 35px 25px;
+    position: absolute;
+    bottom: -110px; /* Position it below the hero section */
+    left: 45%;
+    transform: translateX(-40%);
+    width: 850px;
+    max-width: 1000px;
+    z-index: 20;
+    gap: 20px;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 ;
+    flex: 1 1 auto; 
+}
+
+
+.search-section label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-section .dropdown-icon {
+    font-size: 12px;
+    color: #FA7436;
+    margin-left: 5px;
+
+
+}
+
+.search-section span {
+    font-size: 14px;
+    color: #999;
+}
+
+.explore-btn {
+    background-color: #FA7436;
+    color: #fbfafa;
+    padding: 20px 40px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+}
+
+.explore-btn:hover {
+    background-color: #e66a2f;
+}
+
+/* Things You Need To Do Section */
+.things-to-do {
+    text-align: center;
+    position: relative;
+    padding-top: 200px; /* Adjust to account for search panel overlap */
+    background-color: #F8F8F8;
+}
+
+.things-to-do h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.airplane-graphic {
+    position: absolute;
+    top: 200px; /* Adjust position */
+    right: 320px; /* Adjust position */
+    width: 150px; /* Adjust size */
+    opacity: 90;
+    z-index: 0;
+}
+
+.arrow-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.arrow-btn.back {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #555;
+}
+
+.arrow-btn.next {
+  background-color: #f97316;
+  color: white;
+}
+
+
+/* Cards Grid (reusable for Things To Do, Deals, Blog, Vacation Plans) */
+.cards-grid {
+    display: grid;
+    /* Default for most grids, will adjust for deals/blog specifically below */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+    margin-top: 50px;
+    position: relative; 
+    z-index: 1;
+}
+
+/* Specific 4-column layout for Deals and Blog sections */
+.deals .cards-grid,
+.blog .cards-grid {
+    grid-template-columns: repeat(4, 1fr); /* Force 4 columns for these sections */
+}
+
+/* Fallback for smaller screens to ensure responsiveness for deals and blog */
+@media (max-width: 1200px) { /* Adjust breakpoint as needed for when 4 columns become too narrow */
+    .deals .cards-grid,
+    .blog .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+
+.card {
+    background-color: #fff;
+    border-radius: 15px; /* Consistent border radius for all cards */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    min-height: 250px; /* Ensure consistent card height for Things To Do and general cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+/* Background shapes for 'Things you need to do' cards */
+.card::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.card:nth-child(1)::before {
+    background-color: #FA7436; /* Orange */
+}
+.card:nth-child(2)::before {
+    background-color: #4A90E2; /* Blue */
+}
+.card:nth-child(3)::before {
+    background-color: #F5A623; /* Yellow */
+}
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; /* Keep icon above background shape */
+}
+
+/* Container styling */
+.travel-hero-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.airplane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Main traveler image */
+.traveler-image {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+/* Badge / Label Styling */
+.badge {
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+  z-index: 10;
+}
+
+/* Individual positioning */
+.badge.award {
+  top: 20px;
+  left: 20px;
+  background-color: #ffffff;
+  color: #444444;
+  border-color: #c3c3c3;
+}
+
+.badge.explore {
+  top: 120px;
+  right: 10px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: left;
+  border-color: #c3c3c3;
+
+}
+
+.badge.explore span {
+  display: block;
+  font-weight: normal;
+  font-size: 13px;
+  margin-top: 4px; 
+}
+
+.badge.reviews {
+  bottom: 10px;
+  left: 20px;
+  background-color: #ffffff;
+  color: #141212;
+  border-color: #eaeceb;
+}
+
+
+.card-icon {
+    width:30px;
+    height: 40px;
+    font-size: 36px;
+}
+
+.icon-bg-orange .card-icon {
+    color: #FA7436;
+}
+
+.icon-bg-blue .card-icon {
+    color: #4A90E2;
+}
+
+.icon-bg-yellow .card-icon {
+    color: #F5A623;
+}
+
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Deals Section Specifics */
+.deals {
+    text-align: center;
+    background-color: #FEFCFB;
+}
+
+.deal-card {
+    padding: 0; /* Reset padding for image-heavy card */
+    min-height: unset; /* Allow height to adjust to content */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+}
+
+.deal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px; /* Space between image and text content */
+}
+
+.deal-card .card-content {
+    padding: 0 20px 20px; /* Add padding to the content area below the image */
+    width: 100%; /* Ensure content takes full width for alignment */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.deal-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.deal-card .location-rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.deal-card .location,
+.deal-card .rating {
+    display: flex;
+    align-items: center;
+}
+
+.deal-card .location i {
+    margin-right: 5px;
+    color: #FA7436; /* Orange icon for location */
+}
+
+.deal-card .rating i {
+    margin-left: 5px; /* Space between rating text and star */
+    color: #F5A623; /* Yellow icon for star */
+}
+
+.price-info {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-end; /* Pushes price to the right */
+    margin-top: auto; /* Push price to the bottom if content above is short */
+}
+
+.original-price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discounted-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FA7436;
+}
+
+/* Vacation Plans Section */
+.vacation-plans {
+    text-align: center;
+    background-color: #FEFCFB;
+    position: relative; /* For the graphic */
+}
+
+.vacation-plans h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.vacation-plans .airplane-graphic { /* Reusing the airplane graphic */
+    position: absolute;
+    top: 50px; /* Adjust position */
+    right: 50px; /* Adjust position */
+    width: 150px; /* Adjust size */
+    opacity: 0.3;
+    z-index: 0;
+    transform: rotate(20deg); /* Slightly different rotation */
+}
+
+.vacation-card {
+    padding: 0; /* Reset padding for image-heavy card */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    min-height: unset; /* Allow height to adjust to content */
+}
+
+.vacation-card img {
+    width: 100%;
+    height: 200px; /* Larger image height */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.vacation-card .card-content {
+    padding: 0 20px 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.vacation-card h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.vacation-card .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FA7436;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.vacation-card .details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.vacation-card .details i {
+    margin-right: 5px;
+    color: #FA7436; /* Icon color for clock */
+}
+
+.vacation-card .details .rating i {
+    color: #F5A623; /* Star icon color */
+}
+
+.vacation-arrows {
+    margin-top: 50px; /* Add space below cards */
+    justify-content: center; /* Center the arrows below the grid */
+}
+.vaction-tree-graphic {
+    position: absolute;
+    top: 100px; /* Adjust position */
+    right: 450px; /* Adjust position */
+    width: 100px; /* Adjust size */
+    opacity: 90;
+    z-index: 0;
+}
+
+.description-with-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.vacation-arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-btn.back {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.arrow-btn.next {
+  background-color: #f97316;
+  color: #fff;
+}
+
+
+/* Blog Section Specifics */
+.blog {
+    text-align: center;
+    background-color: #FEFCFB; /* Changed to F8F8F8 for separation from vacation plans */
+}
+
+.blog-card {
+    padding: 0;
+    align-items: flex-start;
+    min-height: unset; /* Remove min-height constraint for blog cards */
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-card .blog-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    text-align: left; /* Align text left within blog card */
+}
+
+.blog-card .blog-date {
+    font-size: 14px;
+    color: #999;
+    padding: 0 15px 15px;
+    display: block;
+    text-align: left; /* Align text left within blog card */
+    margin-top: auto; /* Pushes date to the bottom of the card */
+}
+
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.blog-pagination .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blog-pagination .dot.active {
+    background-color: #FA7436;
+    width: 25px; /* Longer dot for active */
+    border-radius: 5px; /* Pill shape */
+}
+
+/* Testimonials Section (About Us) */
+.testimonials {
+    padding: 80px 0;
+    background-color: #F7F8FC; /* White background for this section */
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align left and right sections */
+    gap: 50px; /* Space between the two parts */
+}
+
+.testimonials-left {
+    max-width: 45%; /* Adjust width as needed */
+}
+
+.testimonials-left h2 {
+    font-size: 40px; /* Adjust font size */
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.testimonials-left .subtitle {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.testimonials-arrows {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.arrow-btn {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    padding: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.arrow-btn img {
+    max-width: 20px;
+    height: auto;
+    /* This filter makes the arrow gray. It's complex, but effective */
+    filter: invert(70%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(80%); 
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.arrow-btn.active-arrow {
+    background-color: #FA7436;
+    border-color: #FA7436;
+}
+
+.arrow-btn.active-arrow img {
+    filter: brightness(0) invert(1); /* Makes the arrow white */
+    opacity: 1;
+}
+
+.arrow-btn:not(.active-arrow):hover {
+    border-color: #FA7436;
+}
+
+.arrow-btn:not(.active-arrow):hover img {
+    /* This filter makes the arrow orange on hover for inactive buttons */
+    filter: invert(47%) sepia(90%) saturate(417%) hue-rotate(334deg) brightness(97%) contrast(97%);
+    opacity: 1;
+}
+
+.testimonials-right {
+    max-width: 50%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align cards to the right */
+    position: relative; /* For background graphic */
+}
+
+/* Add a background graphic to the testimonials right side (Optional, replace path) */
+.testimonials-right::after {
+    content: '';
+    position: absolute;
+    top: -50px; /* Adjust vertical position */
+    right: -50px; /* Adjust horizontal position */
+    width: 200px; /* Adjust size */
+    height: 200px; /* Adjust size */
+    /* Example background for the swooshing lines, adjust path or use a different method */
+    background: url('abstract-airplane-graphic.png') no-repeat center center / contain; 
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.testimonial-front-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    width: 80%; /* Adjust card width relative to its container */
+    text-align: left;
+    position: relative;
+    z-index: 1; /* Ensure cards are above background graphic */
+}
+
+
+
+.testimonial-card {
+    background-color: #F7F8FC;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    width: 80%; /* Adjust card width relative to its container */
+    text-align: left;
+    position: relative;
+    z-index: 1; /* Ensure cards are above background graphic */
+}
+
+/* Style for the first testimonial card (with image and quote) */
+.testimonial-card-style-1 {
+    margin-bottom: 20px; /* Space between the two cards */
+    padding-left: 90px; /* Make space for the user image */
+    margin-right: 0; /* Align to the right side of its flex container */
+}
+
+.testimonial-user-image {
+    width: 70px; /* Adjust size */
+    height: 70px; /* Adjust size */
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 25px; /* Adjust vertical position */
+    left: 15px; /* Adjust horizontal position */
+    border: 3px solid #FA7436; /* Orange border for the active user image */
+    box-shadow: 0px 0px 0px 5px rgba(250, 116, 54, 0.2); /* Outer glow effect */
+}
+
+.testimonial-quote {
+    font-style: italic;
+    color: #555;
+    line-height: 1.7;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.testimonial-location, .testimonial-role {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Style for the second testimonial card (below, only name/role) */
+.testimonial-card-below {
+    position: absolute;
+
+    margin-top: 210px; /* Adjust overlap/spacing */
+    width: 85%; /* Slightly smaller width */
+    opacity: 0.5; /* Slightly less prominent */
+    margin-right: -80px; /* Pull it further right for overlap effect */
+    padding: 20px; /* Standard padding for this card */
+    text-align: left; /* Ensure text is aligned left */
+}
+
+/* Hide the user image and quote for the second card explicitly */
+.testimonial-card-style-2 .testimonial-user-image,
+.testimonial-card-style-2 .testimonial-quote {
+    display: none;
+}
+.airplane-icon {
+  position: relative;
+  bottom: 150px;  
+  left: 99%;
+  width: 100px;
+  height: auto;
+  z-index: 0;
+}
+
+
+
+/* Subscribe Section */
+/* Subscribe Section */
+.subscribe {
+    background-color: #FA7436;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 50px auto;
+    max-width: 1100px;
+}
+
+.subscribe h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+.subscriberight-tree-graphic {
+    position: absolute;
+    top: 5px; /* Adjust position */
+    right: 10px; /* Adjust position */
+    width: 120px; /* Adjust size */
+    opacity: 90;
+    z-index: 0;
+}
+.subscribeleft-tree-graphic {
+    position: absolute;
+    bottom: 5px; /* Adjust position */
+    left: 4px; /* Adjust position */
+    width: 270px; /* Adjust size */
+    opacity: 90;
+    z-index: 0;
+}
+
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.input-with-button {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-with-button input {
+  width: 100%;
+  padding: 12px 120px 12px 15px; /* space for button on right */
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.subscribe-btn {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  padding: 0 20px;
+  background-color: #FA7436;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.subscribe .button:hover {
+    background-color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #F8F8F8; /* Same as body background */
+    padding-top: 80px;
+}
+
+.footer-logo{
+    position: absolute;
+    left: 110px; /* Adjust position */
+    z-index: 0;
+    top:10px
+}
+.footer-col.about-us {
+    position: relative; /* KEY line */
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-col h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.footer-col.about-us p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Social Icons Section */
+.social-icons {
+    display: flex; /* Arrange icons in a row */
+    gap: 10px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: flex; /* Use flex to center icon within the circle */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Size of the social icon circle */
+    height: 40px; /* Size of the social icon circle */
+    background-color: white; /* **White background for the circle** */
+    border-radius: 50%; /* **Makes the background perfectly rounded** */
+    color: #555; /* Icon color */
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.social-icons a:hover {
+    color: #FA7436;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 15px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #777;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #FA7436;
+}
+
+.footer-bottom {
+    background-color: #F0F0F0; /* Slightly darker footer bottom */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+.footer-bottom .main-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .main-content-wrapper {
+        padding: 0 15px;
+    }
+
+    .hero .main-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .hero-image {
+        max-width: 350px;
+    }
+
+    .search-panel {
+        flex-wrap: wrap;
+        bottom: -150px; 
+        padding: 20px;
+        width: 95%;
+    }
+
+    .search-section {
+        flex-basis: 48%; /* Two columns */
+        border-right: none; /* Remove right border when wrapped */
+        margin-bottom: 20px;
+    }
+
+    .search-section:nth-child(odd) { /* Re-add border to the right of odd items (first column) */
+        border-right: 1px solid #eee;
+    }
+    .search-section:nth-child(even) { /* No border for even items (second column) */
+        border-right: none;
+    }
+    /* Special handling for the last search section to remove bottom margin when it's part of the last row */
+    .search-section:nth-last-child(2) { /* Targets the "Guest" section specifically */
+        margin-bottom: 0;
+    }
+
+
+    .explore-btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Override for deals and blog grids on smaller screens to allow wrapping */
+    .deals .cards-grid,
+    .blog .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+
+    .testimonials-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials-left, .testimonials-right {
+        max-width: 90%;
+        align-items: center;
+    }
+
+    .testimonials-right {
+        /* Adjust for stacked cards on smaller screens */
+        align-items: center; /* Center the cards within the right container */
+        width: 100%; /* Allow it to take full width */
+    }
+
+    .testimonial-card {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-right: auto; 
+        margin-left: auto; 
+        margin-top: 20px; /* Reset top margin for both */
+    }
+
+    .testimonial-card-style-1 {
+        padding-left: 90px; 
+    }
+
+    .testimonial-card-below {
+        margin-top: 20px; /* Adjust for responsiveness, remove negative margin for clarity */
+        width: 80%; /* Adjust width for smaller screens */
+        margin-right: auto;
+    }
+
+
+    .testimonial-user-image {
+        top: 15px;
+        left: 15px;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-col {
+        flex-basis: 45%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col.about-us {
+        flex-basis: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none; /* Hide navigation for small screens, implement a hamburger menu if needed */
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .search-panel {
+        bottom: -220px;
+    }
+
+    .search-section {
+        flex-basis: 100%; /* Single column for search inputs */
+        border-right: none;
+        margin-bottom: 15px;
+    }
+    .search-section:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .things-to-do h2, .deals h2, .blog h2, .testimonials h2, .subscribe h2, .vacation-plans h2 {
+        font-size: 32px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 80%;
+    }
+
+    .footer-bottom .main-content-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .search-panel {
+        bottom: -280px;
+        padding: 15px;
+    }
+
+    .explore-btn {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+
+    .things-to-do h2, .deals h2, .blog h2, .testimonials h2, .subscribe h2, .vacation-plans h2 {
+        font-size: 28px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .testimonial-card-style-1 {
+        padding-left: 70px; /* Adjust padding for smaller screens */
+    }
+
+    .testimonial-user-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .subscribe h2 {
+        font-size: 28px;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 95%;
+    }
+}
